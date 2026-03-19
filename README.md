@@ -41,6 +41,7 @@ An advanced Chrome Extension to efficiently save, manage, and restore browser ta
 ## 📂 Project Structure
 
 
+```
 tab-session-manager/
 │
 ├── manifest.json
@@ -51,8 +52,7 @@ tab-session-manager/
 │ ├── icon16.png
 │ ├── icon32.png
 │ └── icon192.png
-
-
+```
 ---
 
 ## ⚙️ Installation (Manual)
