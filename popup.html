@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Session Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <div class="top-bar">
+      <h1>Tab Sessions</h1>
+      <span class="subtitle">Smart session manager</span>
+    </div>
+
+    <!-- TOGGLE -->
+    <div class="mode-toggle">
+      <button id="saveViewBtn" class="active">Save</button>
+      <button id="sessionsViewBtn">Sessions</button>
+    </div>
+
+    <!-- SAVE VIEW -->
+    <div id="saveView">
+
+      <div class="input-group modern">
+        <input type="text" id="sessionName" placeholder="Session name...">
+        <button id="saveBtn">Save</button>
+      </div>
+
+      <div id="tabsList" class="tabs-list"></div>
+    </div>
+
+    <!-- SESSIONS VIEW -->
+    <div id="sessionsView" style="display:none;">
+      <input type="text" id="searchBox" placeholder="Search sessions..." class="search">
+
+      <div id="sessionsList" class="list"></div>
+      <div id="emptyState" class="empty">No Saved Sessions</div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

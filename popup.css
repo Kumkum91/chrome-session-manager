@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 380px;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #e2e8f0;
+}
+
+/* APP */
+.app {
+  padding: 14px;
+}
+
+/* HEADER */
+.top-bar h1 {
+  font-size: 16px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* TOGGLE */
+.mode-toggle {
+  display: flex;
+  gap: 6px;
+  margin: 12px 0;
+  background: rgba(255,255,255,0.05);
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.mode-toggle button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.mode-toggle .active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+}
+
+/* INPUT */
+.input-group.modern {
+  display: flex;
+  gap: 6px;
+  background: rgba(255,255,255,0.05);
+  padding: 6px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.input-group button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+}
+
+/* ARC TAB LIST */
+.tabs-list {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+/* COMPACT TAB */
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.tab-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* CHECKBOX SMALL */
+.tab-item input {
+  transform: scale(0.8);
+  accent-color: #6366f1;
+}
+
+.tab-item.selected {
+  background: rgba(99,102,241,0.25);
+  border: 1px solid rgba(99,102,241,0.6);
+}
+
+/* ICON */
+.tab-item img {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+/* TITLE */
+.tab-item span {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* SEARCH */
+.search {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background: #1e293b;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* SESSION CARD */
+.session-card {
+  padding: 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.2s;
+}
+
+.session-card:hover {
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.session-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.session-time {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ICON STRIP */
+.session-tabs {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0;
+  flex-wrap: wrap;
+}
+
+.tab-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  font-size: 10px;
+}
+
+.tab-chip img {
+  width: 12px;
+  height: 12px;
+}
+
+.tab-chip span {
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.more-tabs, .less-tabs {
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.more-tabs:hover,
+.less-tabs:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.btn {
+  flex: 1;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn.restore {
+  background: #22c55e;
+  color: white;
+}
+
+.btn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.session-tabs img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  border: none;
+  background: rgba(255,255,255,0.08);
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn {
+  flex: 1;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Restore */
+.btn.restore {
+  background: #22c55e;
+  color: white;
+}
+
+.btn.restore:hover {
+  background: #16a34a;
+}
+
+/* Delete */
+.btn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn.delete:hover {
+  background: #dc2626;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.6;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6366f1;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
