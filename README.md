@@ -1,29 +1,29 @@
 # Tab Session Manager (Chrome Extension)
-
+![Extension icon](./screenshot/Screenshot-extension-icon.png)
 An advanced Chrome Extension to efficiently save, manage, and restore browser tab sessions with a clean, modern, and premium dark UI.
 
 ---
 
 ## Features
 
-- 📌 Save selected tabs into custom named sessions  
-- 🔍 Search and filter saved sessions instantly  
-- ♻️ Restore sessions anytime  
-- 🗑️ Delete sessions easily  
-- 🎨 Clean, minimal, dark premium UI  
-- 🧠 Tab icons using `tab.favIconUrl` (no external favicon APIs)  
-- ⚡ Smooth and responsive performance  
-- 🛡️ Proper error handling (no 404 / favicon issues)
+-  Save selected tabs into custom named sessions  
+-  Search and filter saved sessions instantly  
+-  Restore sessions anytime  
+-  Delete sessions easily  
+-  Clean, minimal, dark premium UI  
+-  Tab icons using `tab.favIconUrl` (no external favicon APIs)  
+-  Smooth and responsive performance  
+-  Proper error handling (no 404 / favicon issues)
 
 ---
 
-## 🧠 Key Highlights
+##  Key Highlights
 
-- ❌ No external favicon APIs used (avoids `ERR_NAME_NOT_RESOLVED` issues)  
-- ✅ Uses only `tab.favIconUrl` or stored icons  
-- ⚠️ Handles invalid/restricted URLs (`chrome://`, local IPs, etc.) safely  
-- 🎯 Designed with a modern dark/glass UI approach  
-- ⚡ Optimized rendering for better performance  
+-  No external favicon APIs used (avoids `ERR_NAME_NOT_RESOLVED` issues)  
+-  Uses only `tab.favIconUrl` or stored icons  
+-  Handles invalid/restricted URLs (`chrome://`, local IPs, etc.) safely  
+-  Designed with a modern dark/glass UI approach  
+-  Optimized rendering for better performance  
 
 ---
 
@@ -68,33 +68,39 @@ chrome://extensions/
 4. Click **Load Unpacked**  
 5. Select the project folder  
 
+##Example
+![Setup View](./screenshot/setup-screenshot.png)
+
 ---
 
 ## 📸 Screenshots
 
-/screenshots/save-view.png
-/screenshots/sessions-view.png
+### Save Tabs View
+![Save View](./screenshot/Screenshot-save.png)
+
+### Sessions View
+![Sessions View](./screenshot/Screenshot-sessions.png)
 
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
-- 🔄 Auto session backup  
-- ☁️ Cloud sync (Google account integration)  
-- 📤 Export / Import sessions  
-- 🧩 Drag & reorder sessions  
-- 🪟 Restore session in new window  
-- 🔔 Enhanced duplicate tab detection  
+-  Auto session backup  
+-  Cloud sync (Google account integration)  
+-  Export / Import sessions  
+-  Drag & reorder sessions  
+-  Restore session in new window  
+-  Enhanced duplicate tab detection  
 
 ---
 
-## ⚠️ Constraints & Design Decisions
+##  Constraints & Design Decisions
 
-- ❌ Avoided Google favicon APIs (to prevent network errors)  
-- ✅ Only `tab.favIconUrl` used for icons  
-- ⚠️ Handles restricted/internal URLs safely  
-- 🎯 Focus on performance + clean UI (no heavy frameworks)  
+-  Avoided Google favicon APIs (to prevent network errors)  
+-  Only `tab.favIconUrl` used for icons  
+-  Handles restricted/internal URLs safely  
+-  Focus on performance + clean UI (no heavy frameworks)  
 
 ---
 
